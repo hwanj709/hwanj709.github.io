@@ -1,8 +1,8 @@
 
 :root {
   --color-bg: #FCE9CB;
-  --color-text-main: #CEA96E;
-  --color-primary: #FFFF00;
+  --color-text-main: #7B6A4F;
+  --color-primary: #CEA96E;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -27,7 +27,9 @@
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
     format("opentype");
 }
-
+p li{
+  color: #7B6A4F;
+}
 
 /* Navigation grid */
 .footer {
