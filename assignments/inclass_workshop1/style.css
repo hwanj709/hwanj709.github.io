@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    background-color:#000000;
+    border: 20px solid blue;
+    height: 96vh;
+    width: 47vw;
+    align-content:center;
+}
+.director {
+display: flex;
+flex-direction: row;
+justify-content: center;
+text-align: center;
+color:#ffffff;
+}
+.title{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-content: flex-start;
+font-size:100px;
+color:blue;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #ffffff;
+}
+.title p{
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    margin-top:10px;
+}
+.credits{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    text-align: center;
+    color:#ffffff;
+    padding: 3rem 3rem 0 0;
+}
