@@ -5,19 +5,24 @@ body{
     
 }
 .flexbox-container{
+    max-width: 1500px;
+    margin:40px auto 0 auto;
+    padding: 20px 50px;
     display: flex;
-   flex-direction: column;
-   align-items: center;
+    align-items: flex-start;
 }
 .title{
     font-family: 'Caveat', cursive;
-    font-size:30px;
+    font-size:40px;
     color:#c61616;
+    width:20%;
     }
+    
 
 .text{
-    width: 800px;
+    
     font-family: 'Noto Serif Display', serif;
+    width: 70%;
 }
 .bg{
     background: #921212;
