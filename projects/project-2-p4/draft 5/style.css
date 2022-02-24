@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
+body{
+    background-color:#FFE2AD;
+    
+}
+.flexbox-container{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.title{
+    font-family: 'Caveat', cursive;
+    font-size:30px;
+    color:#c61616;
+    }
+
+.text{
+    width: 800px;
+    font-family: 'Noto Serif Display', serif;
+}
+.bg{
+    background: #921212;
+    transition: 0.5s;
+    color: #921212;
+}

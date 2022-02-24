@@ -6,17 +6,18 @@ body{
 }
 
 .title{
+    float: left;
     font-family: 'Noto Serif Display', serif;
-    font-size:60px;
+    font-size: 50px;
     font-weight: 600;
-    color:#c61616;
-    text-align:right;
-    margin-right: 110px;
+    color: #c61616;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin: 0px;
     }
 
 .text{
-    display: block;
-    margin-left: auto;
+     margin-left: auto;
     margin-right: auto;
     width: 800px;
     font-family: 'Noto Serif Display', serif;
