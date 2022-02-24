@@ -19,4 +19,8 @@ body{
     width: 800px;
     font-family: 'Alegreya', serif;
 }
-    
+.bg{
+    background: #921212;
+    transition: 0.5s;
+    color: #921212;
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600&display=swap');
+body{
+    background-color:#f4d8b6;
+    
+}
+
+.title{
+    font-family: 'Noto Serif Display', serif;
+    font-size:60px;
+    font-weight: 600;
+    color:rgba(167, 30, 12, 0.973);
+    text-align:right;
+    margin-right: 110px;
+    }
+
+.text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    font-family: 'Noto Serif Display', serif;
+   
+}
+
