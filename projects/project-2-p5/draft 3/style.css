@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
 body{
     background-color:#FFE2AD;
+    animation-name: color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
     
 }
 .flexbox-container{
@@ -54,3 +57,14 @@ body{
 .color a{
     color: #921212;
 }
+@keyframes color {
+    0% {
+      background-color: #FFE2AD;
+    }
+    50% {
+      background-color: #921212;
+    }
+    100% {
+      background-color:#FFE2AD;
+    }
+  }
