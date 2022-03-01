@@ -5,26 +5,28 @@ body{
     
 }
 .flexbox-container{
-    max-width: 1500px;
+    max-width: 1000px;
     margin:40px auto 0 auto;
     padding: 20px 50px;
     display: flex;
-    align-items: flex-start;
+    align-items:flex-start;
 }
 .title{
     font-family: 'Caveat', cursive;
     font-size:40px;
     color:#c61616;
-    width:20%;
+    width:30%;
     position: sticky;
     top:0;
+    transform-origin: 0 0;
+        transform: rotate(90deg);
     }
     
 
 .text{
     padding: 30px;
     font-family: 'Noto Serif Display', serif;
-    width: 50%;
+    width: 60%;
 }
 .text .select:before{
     position: absolute;
