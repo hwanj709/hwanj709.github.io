@@ -53,6 +53,7 @@ body{
 }
 .color a{
     color: #921212;
+    text-decoration: none;
 }
 @media screen and (max-width:768px){
     .title{
