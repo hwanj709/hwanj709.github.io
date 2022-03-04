@@ -1,33 +1,7 @@
-/*:root {
-  --color-bg: #ffffff;
-  --color-text-main: #000000;
-  --color-primary: #000000;
-  --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
-  --font-family: "Roboto";
-  --font-family-header: "Roboto";
-}
 
 
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
-}*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
-/* Import fonts */
-@font-face {
-  font-family: "Roboto", sans-serif;
-  /* src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');*/
-}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -46,6 +20,7 @@ body {
 }
 
 .Aa {
+  font-family: 'Roboto', sans-serif;
   display: flex;
   float: left;
   text-align: center;
@@ -57,6 +32,7 @@ body {
 }
 
 .about {
+  font-family: 'Roboto', sans-serif;
   margin: 10rem 0 0 0;
   padding-top: 30px;
   font-size:20px;
