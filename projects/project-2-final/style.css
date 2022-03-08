@@ -4,7 +4,7 @@ body{
   background: linear-gradient(-45deg, #FFE2AD, #921212, #FFE2AD, #921212);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
+	height: 100%;
     
 }
 .flexbox-container{
@@ -45,6 +45,7 @@ body{
 }
 .color a:hover{
     background-color: #FFE2AD;
+    font-size:100px;
 }
 @keyframes gradient {
 	0% {
