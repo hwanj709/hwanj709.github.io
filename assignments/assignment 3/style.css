@@ -4,21 +4,8 @@ body{
 }
 
 
-@media screen and (min-width: 1200px){
-.example {
-    font-size: 60px;
-}
-.logo{
-    padding:0.5rem 1rem;
-    border: 8px solid black;
-}
-.logo .word{
-    padding-right: 0.8ch;
-}
-.logo .word .remaining-word{
-    display: inline-block;
-}
-}
+
+
 @media screen and (min-width: 768px){
     .example {
         font-size: 50px;
@@ -48,4 +35,20 @@ body{
 }
 .logo .word .remaining-word{
     display:none;
+}
+
+@media screen and (min-width: 1200px){
+    .example {
+        font-size: 60px;
+    }
+    .logo{
+        padding:0.5rem 1rem;
+        border: 8px solid black;
+    }
+    .logo .word{
+        padding-right: 0.8ch;
+    }
+    .logo .word .remaining-word{
+        display: inline-block;
+    }
 }

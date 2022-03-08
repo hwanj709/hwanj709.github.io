@@ -23,27 +23,27 @@ body  {
 .example p{
     font-family: 'Roboto', sans-serif;
 }
-.example:nth-child(1){
+.example:nth-child(4){
     font-weight:100;
     font-size: 20px;
 }
-.example:nth-child(2){
+.example:nth-child(5){
     font-weight:300;
   font-size: 25px;
 }
-.example:nth-child(3){
+.example:nth-child(6){
     font-weight: 400;
   font-size: 30px;
 }
-.example:nth-child(4){
+.example:nth-child(7){
     font-weight: 500;
     font-size: 35px;
 }
-.example:nth-child(5){
+.example:nth-child(8){
     font-weight: 700;
     font-size: 40px;
 }
-.example:nth-child(6){
+.example:nth-child(9){
     font-weight: 900;
     font-size: 45px;
 }
