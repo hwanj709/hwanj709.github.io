@@ -1,0 +1,7 @@
+.flex_container{
+    display: flex;
+
+}
+.album_cover{
+    justify-content: center;
+}
