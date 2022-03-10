@@ -100,10 +100,19 @@ body{
 }
 @media screen and (max-width:768px){
 
+.flexbox-container{
+    padding: 0;
+}
 .title{
     transform:rotate(-90deg);
     display:block;
     font-size: 25px;
-    width:100px;
+    width:250px;
+    height:120px;
+    top: 10%;
+}
+.text{
+    padding-left: 0px;
+    width: 75%;
 }
 }
