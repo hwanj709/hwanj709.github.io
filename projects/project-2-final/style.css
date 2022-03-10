@@ -40,6 +40,7 @@ body{
 
 .color{
     display: inline-block;
+    position: relative;
 }
 .color a{
     color: #921212;
@@ -47,6 +48,36 @@ body{
 .color a:hover{
     background-color: #FFE2AD;
     font-size:100px;
+}
+.color .tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    padding: 10px 15px;
+    z-index: 1;
+    border-radius: 6px;
+    top: 100%;
+  left: 60%;
+  margin-left: -60px;
+    display: inline-block;
+    position: absolute;
+}
+.color .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+  
+.color:hover .tooltiptext{
+    visibility: visible;
 }
 @keyframes gradient {
 	0% {
