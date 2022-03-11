@@ -1,5 +1,8 @@
-.flex_container{
+.flex_container_1{
+    height: 800px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 .album_cover{
