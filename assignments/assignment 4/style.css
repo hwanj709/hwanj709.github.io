@@ -52,7 +52,21 @@ hgroup h4{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-
+.flex_container_3{
+    margin-top: 0px;
+    margin:20px;
+    padding:200px;
+    padding-top: 80px;
+    color:aliceblue
+}
+ol li{
+    text-align: justify; /* For Edge */
+  -moz-text-align-last: justify; /* For Firefox prior 58.0 */
+  text-align-last: justify;
+}
+ul{
+    list-style: none;
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
