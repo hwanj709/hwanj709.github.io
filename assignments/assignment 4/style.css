@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Wallpoet&display=swap');
 
 body{
     background: linear-gradient(-45deg, #29083b, #0dddf0, #0e1e5f, #0cf590);
@@ -25,6 +25,7 @@ body{
     justify-content: center;
 }
 .flex_container_2{
+    font-family: 'Wallpoet', cursive;
     display: flex;
     align-items: center;
     height: 400px;
@@ -53,11 +54,13 @@ hgroup h4{
     margin-inline-end: 0px;
 }
 .flex_container_3{
+    font-family: 'Wallpoet', cursive;
     margin-top: 0px;
     margin:20px;
     padding:200px;
     padding-top: 80px;
-    color:aliceblue
+    padding-bottom: 80px;
+    color:aliceblue;
 }
 ol li{
     text-align: justify; /* For Edge */
@@ -66,6 +69,32 @@ ol li{
 }
 ul{
     list-style: none;
+}
+.flex_container_4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.merch{
+    object-fit: contain;
+    padding-left: 100px;
+    flex: 3;
+}
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid white;
+	border-bottom: 25px solid transparent;
+    padding-left: 40px;
+    flex: 1;
+}
+.click_here{
+    padding-left: 20px;
+    font-family: 'Wallpoet', cursive;
+    color: white;
+    font-size: 30px;
+    flex:2;
 }
 @keyframes gradient {
 	0% {
@@ -80,4 +109,14 @@ ul{
 }
 footer{
     color: white;
+}
+@media screen and (min-width: 1200px){
+    .main_container{
+        display:flex;
+        flex-direction: column;
+    }
+    .flex_container_2{
+        flex-direction: column;
+        height:auto;
+    }
 }
