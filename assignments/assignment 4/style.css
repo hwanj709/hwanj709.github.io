@@ -1,10 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+body{
+    background: linear-gradient(-45deg, #29083b, #0dddf0, #0e1e5f, #0cf590);
+      background-size: 900% 900%;
+      animation: gradient 8s ease infinite;
+      height: 100%;
+      
+  }
 .flex_container_1{
     height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
 
+}
+.title{
+    font-family: 'Shrikhand', cursive;
+    color: #fff;
+    font-size: 30px;
 }
 .album_cover{
     justify-content: center;
+}
+.flex_container_2{
+    display: flex;
+    align-items: center;
+    height: 400px;
+    justify-content: center;
+}
+.spotify{
+    margin:50px;
+}
+.youtube{
+    margin:50px;
+}
+.information{
+    margin: 50px;
+    color: white;
+}
+hgroup h2{
+    margin-block-start: 20px;
+    margin-block-end: 1px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+hgroup h4{
+    margin-block-start: 1px;
+    margin-block-end: 20px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+footer{
+    color: white;
 }
