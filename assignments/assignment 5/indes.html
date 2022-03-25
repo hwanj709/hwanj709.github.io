@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment 5</title>
 </head>
 <body>
-    <img src = "assets/image01.jpg" id=mainImage alt="firstImage" style="width:120px;height:90px;">
+    <img src = "assets/image01.jpeg" id=mainImage alt="firstImage" style="width:800px;height:800px;">
     
 <script>
     let myImage=document.getElementById("mainImage");
-    let imageArray=["assets/image02.jpg","assets/image03.jpg","assets/image04.jpg","assets/image05.jpg","assets/image06.jpg"];
+    let imageArray=["assets/image02.jpeg","assets/image03.jpeg","assets/image04.jpeg","assets/image05.jpeg","assets/image06.jpeg"];
     let imageIndex=0;
 
     function changeImage(){
@@ -21,7 +21,7 @@
             imageIndex=0;
         }
     }
-    setInterval(changeImage,3000);
+    setInterval(changeImage,60000);
 </script>
 </body>
 </html>
