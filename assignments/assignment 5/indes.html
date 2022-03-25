@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src = "assets/image01.jpg" id=mainImage alt="firstImage" style="width:120px;height:90px;">
+    
+<script>
+    let myImage=document.getElementById("mainImage");
+    let imageArray=["assets/image02.jpg","assets/image03.jpg","assets/image04.jpg","assets/image05.jpg","assets/image06.jpg"];
+    let imageIndex=0;
+
+    function changeImage(){
+        myImage.setAttribute("src",imageArray[imageIndex]);
+        imageIndex++;
+        if(imageIndex>=imageArray.length){
+            imageIndex=0;
+        }
+    }
+    setInterval(changeImage,3000);
+</script>
+</body>
+</html>
