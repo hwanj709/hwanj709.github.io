@@ -18,3 +18,7 @@
     color: #CEA96E;
     font-size: 80px;
   }
+  hr{
+    border: 5px solid rgb(112, 87, 49);
+    border-radius: 2px;
+  }
