@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="categories">
-            <button id="sub1" onclick="myFunction()">street</button>
+            <button id="sub1" onclick="changeBodyBg('brick');">street</button>
             <button id="sub2">shop</button>
             <button id="sub3">solid</button>
     </div>   
@@ -26,9 +26,9 @@
     </div>
 
     <script>
-        function myFunction() {
-           document.getElementById("sub1").style.backgroundImage = "url(background/brick.png)";
-        }
+        function changeBodyBg(image){
+        document.body.style.background = color;
+    }
         </script>
         
 </body>
