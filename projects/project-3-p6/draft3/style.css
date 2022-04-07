@@ -1,0 +1,103 @@
+
+body  {
+    background-image: url("background/container.jpeg");
+}
+.categories{
+    height: 200px;
+    width: 250px;
+    position: fixed;
+    left:0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+#sub1{
+    height: 50px;
+    width: 200px;
+    background-color: #FF00F7;
+
+    box-shadow: 0 3px 3px 0 #000;
+}
+#sub2{
+    height: 50px;
+    width: 200px;
+    background-color: #ECFF00;
+    top: 200px;
+    box-shadow: 0 3px 3px 0 #000;
+}
+
+#sub3{
+    height: 50px;
+    width: 200px;
+    background-color: #7DFF00;
+    bottom: 10px;
+    box-shadow: 0 3px 3px 0 #000;
+}
+
+.photos{
+    opacity:80%;
+}
+#shop1{
+    left:15%;
+    position: relative;
+    transition: 0.5s;
+}
+#shop2{
+    position: absolute;
+    left:50%;
+    top:500px;
+    transition: 0.5s;
+}
+#shop3{
+    position: absolute;
+    left:30%;
+    top:460px;
+    transition: 0.5s;
+}
+#street1{
+    position: absolute;
+    left:74%;
+    top:8%;
+    transition: 0.5s;
+}
+#street2{
+    position: absolute;
+    left:28%;
+    top:20%;
+    transition: 0.5s;
+}
+#street3{
+    position: absolute;
+    left:6%;
+    bottom:250px;
+    transition: 0.5s;
+}
+#solid1{
+    position: absolute;
+    left:40%;
+    bottom:50%;
+    transition: 0.5s;
+}
+#solid2{
+    position: absolute;
+    left:64%;
+    bottom:20px;
+    transition: 0.5s;
+}
+#solid3{
+    position: absolute;
+    left:80%;
+    bottom:100px;
+    transition: 0.5s;
+}
+.photos:hover{
+    opacity:100%;
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+    z-index: 2;
+}
+button:hover{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
