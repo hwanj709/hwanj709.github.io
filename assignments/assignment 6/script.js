@@ -17,7 +17,7 @@ jsonPromise.then((data) => {
         const imageUrl = records[index].fields.Image[0].url
         
         const containerElement = document.createElement('div')
-        containerElement.classList.add('conatiner')
+        containerElement.classList.add('container')
 
         const imageElement = document.createElement('img')
         imageElement.classList.add('image')

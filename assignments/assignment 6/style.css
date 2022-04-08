@@ -1,25 +1,37 @@
-*, *:before, *:after{
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+*, *:before, *:after {
     box-sizing: border-box;
 }
 
-html, body{
+html, body {
     margin: 0;
-    padding: 5%;
+    padding: 3%;
+    background-color: #e7dcb7;
 }
 
-div#static{
+div#static {
     width: 100%;
+    margin-bottom: 3rem;
 }
 
-div#static h1{
-    max-width: 40ch;
-    text-align: center;
-}
-
-div#static p{
+div#static h1 {
     margin: 0 auto;
-    max-width: 60ch;
+    font-family: 'Babylonica', cursive;
+    max-width: 50ch;
     text-align: center;
+    font-size: 65px;
+    color:#be3b24;
+    margin-bottom: 2rem;
+}
+
+div#static p {
+    margin: 0 auto;
+    font-family: 'Cormorant Garamond', serif;
+    max-width: 69ch;
+    font-size: 20px;
+    text-align: center;
+
 }
 
 div#illustrations{
@@ -27,17 +39,22 @@ div#illustrations{
     flex-wrap: wrap;
 }
 
-div.container{
+div.container {
     padding: 2%;
-    border: 1px solid #F2F2F2;
-    margin: 2%;
-    width: 46%;
+    border: 1px solid #858585;
+    box-shadow: 0 4px 3px 0 #3b3a3a;
+    background-color: #f8f7f1;
+    margin: 1%;
+    width: 47%;
+    justify-content: center;
 }
 
-img.image{
-    width: 100%;
+img.image {
+    max-width: 100%;
 }
 
 p.title{
     text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(31, 192, 255);
 }
