@@ -1,0 +1,43 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 5%;
+}
+
+div#static{
+    width: 100%;
+}
+
+div#static h1{
+    max-width: 40ch;
+    text-align: center;
+}
+
+div#static p{
+    margin: 0 auto;
+    max-width: 60ch;
+    text-align: center;
+}
+
+div#illustrations{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.container{
+    padding: 2%;
+    border: 1px solid #F2F2F2;
+    margin: 2%;
+    width: 46%;
+}
+
+img.image{
+    width: 100%;
+}
+
+p.title{
+    text-align: center;
+}
