@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body  {
+    background-image: url("background/container.jpeg");
+}
+main{
+    display: flex;
+}
+
+div#categories{
+    margin: 10px;
+    height: 200px;
+    width: 230px;
+    position: fixed;
+    flex-direction: column;
+
+}
+#sub1{
+    height: 50px;
+    width: 200px;
+    background-color: #FF00F7;
+    box-shadow: 0 3px 3px 0 #000;
+    font-family: 'Rock Salt', cursive;
+    font-size: 20px;
+}
+#sub2{
+    height: 50px;
+    width: 200px;
+    background-color: #ECFF00;
+    top: 200px;
+    box-shadow: 0 3px 3px 0 #000;
+    font-family: 'Rock Salt', cursive;
+    font-size: 20px;
+}
+
+#sub3{
+    height: 50px;
+    width: 200px;
+    background-color: #7DFF00;
+    bottom: 10px;
+    box-shadow: 0 3px 3px 0 #000;
+    font-family: 'Rock Salt', cursive;
+    font-size: 20px;
+}
+
+div#photos{
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+}
