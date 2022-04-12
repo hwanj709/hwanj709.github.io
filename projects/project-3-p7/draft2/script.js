@@ -23,6 +23,7 @@ jsonPromise.then((data) => {
         const imageElement = document.createElement('img')
         imageElement.classList.add('image')
         imageElement.setAttribute('src', imageUrl)
+        
 
         illustrationContainerElement.appendChild(containerElement)
 
@@ -31,4 +32,23 @@ jsonPromise.then((data) => {
         
     }
 })
+// const img = document.createElement("img")
+// img.style.transform = "translate(-50%, -50%) scale(0.5) rotate(" + (Math.random() * 20 - 10) + "deg)"
 
+const sub1 = document.querySelector('#sub1')
+const sub2 = document.querySelector('#sub2')
+const sub3 = document.querySelector('#sub3')
+
+sub1.addEventListener('click', changeBackground);
+function changeBackground()
+{
+    var image = document.querySelector(body);
+    if (image.src == "background/container.jpeg")
+    {
+        image.src = "background/brick.jpeg";
+    }
+    else
+    {
+        image.src = "background/container.jpeg";
+    }
+}
