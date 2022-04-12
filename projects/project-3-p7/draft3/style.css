@@ -1,13 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
 *, *:before, *:after {
     box-sizing: border-box;
 }
 
 html, body  {
-    background-image: url("background/container.jpeg");
+    background-image: url("background/iphonephotogallery.jpg");
+    
 }
 main{
     display: flex;
+    position: relative;
+    width: 100%;
 }
 
 div#categories{
@@ -16,38 +23,53 @@ div#categories{
     width: 230px;
     position: fixed;
     flex-direction: column;
+    top: 200px;
 
 }
 #sub1{
-    height: 50px;
-    width: 200px;
-    background-color: #FF00F7;
-    box-shadow: 0 3px 3px 0 #000;
-    font-family: 'Rock Salt', cursive;
+    height: 30px;
+    width: 50px;
+    background-color: #28353A;
+    border: none;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
+    
 }
 #sub2{
-    height: 50px;
-    width: 200px;
-    background-color: #ECFF00;
+    height: 30px;
+    width: 50px;
+    background-color: #28353A;
+    border: none;
     top: 200px;
-    box-shadow: 0 3px 3px 0 #000;
     font-family: 'Rock Salt', cursive;
     font-size: 20px;
 }
 
 #sub3{
-    height: 50px;
-    width: 200px;
-    background-color: #7DFF00;
+    height: 30px;
+    width: 50px;
+    background-color: #28353A;
+    border: none;
     bottom: 10px;
-    box-shadow: 0 3px 3px 0 #000;
     font-family: 'Rock Salt', cursive;
     font-size: 20px;
 }
 
 div#photos{
-    max-width: 950px;
+    position: absolute;
+    max-width: 1150px;
     display: flex;
     flex-wrap: wrap;
+    right: 0px;
+
+}
+div.container {
+    padding: 2%;
+    margin: 1%;
+    width: 10%;
+    justify-content: center;
+}
+
+img.image {
+    max-width: 100%;
 }
