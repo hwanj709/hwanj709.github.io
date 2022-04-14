@@ -10,7 +10,7 @@ html { font-family: 'Inter', sans-serif; }
 html {
     /* background-image: url("background/iphonephotogallery.jpg");
     background-repeat: no-repeat; */
-    background:url("background/iphonephotogallery.jpg") no-repeat, linear-gradient(90deg, #28353A 9%, #1E1E1E 9%);
+    background:url("background/iphonephotogallery.jpg") no-repeat, linear-gradient(90deg, #28353A 10%, #1E1E1E 10%);
     height: 100%;
     
     
@@ -82,4 +82,13 @@ div.container {
 
 img.image {
     max-width: 100%;
+}
+#sub1:hover{
+    color:rgb(150, 37, 165);
+}
+#sub2:hover{
+    color:rgb(150, 37, 165);
+}
+#sub3:hover{
+    color:rgb(150, 37, 165);
 }
