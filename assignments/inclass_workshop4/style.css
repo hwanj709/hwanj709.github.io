@@ -1,0 +1,34 @@
+main{
+    display: flex;
+}
+div#nav{
+    width:300px;
+    align-content: space-between;
+    margin-right: 90px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#attack-as-dollars{
+    padding:5px;
+    margin: 5px;
+}
+#toptier{
+    padding:5px;
+    margin: 5px;
+}
+#sort-ascending{
+    padding:5px;
+    margin: 5px;
+}
+#sort-descending{
+    padding:5px;
+    margin: 5px;
+}
+
+.user {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid black; 
+    padding: 1rem; 
+    font-size: 1.4rem;
+}
