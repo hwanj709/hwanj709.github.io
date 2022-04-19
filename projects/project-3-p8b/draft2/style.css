@@ -1,0 +1,105 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    background:linear-gradient(90deg, #dbdbdb 12%, #ffffff 12%);
+    height: 100%;
+    
+    
+}
+
+main{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+div.title{
+    position: absolute;
+    left: 257px;
+}
+
+div#categories{
+    margin: 10px;
+    height: 200px;
+    width: 50px;
+    position: absolute;
+    flex-direction: column;
+    top: 265px;
+    left: 9px;
+
+}
+#sub1{
+    height: 50px;
+    width: 50px;
+    background-color: #dbdbdb;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+#sub2{
+    height: 50px;
+    width: 50px;
+    background-color: #dbdbdb;
+    border: none;
+    top: 190px;
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#sub3{
+    height: 50px;
+    width: 50px;
+    background-color: #dbdbdb;
+    border: none;
+    bottom: 11px;
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+div#photos{
+    position: absolute;
+    max-width: 1470px;
+    display: flex;
+    flex-wrap: wrap;
+    right: -35px;
+    top:55px;
+
+}
+div.container {
+    padding: 1%;
+    margin: 1%;
+    width: 10%;
+    justify-content: center;
+}
+
+img.image {
+    max-width: 100%;
+}
+#sub1:hover{
+    color:rgb(255, 255, 255);
+}
+#sub2:hover{
+    color:rgb(255, 255, 255);
+}
+#sub3:hover{
+    color:rgb(255, 255, 255);
+}
+img.image:hover{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.7);
+    z-index: 2;
+}

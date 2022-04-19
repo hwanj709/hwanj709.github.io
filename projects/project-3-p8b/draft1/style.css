@@ -69,11 +69,27 @@ div#title{
     top:48px;
     left:-8px;
 }
-
-i#about:hover{
-    color:rgb(150, 37, 165);
+.fa-circle-info:hover{
+    color:rgb(150, 37, 165) !important;
 }
-
+.fa-circle-info:hover .tooltiptext{
+    visibility: visible;
+}
+.fa-circle-info .tooltiptext {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
 div#photos{
     position: absolute;
     max-width: 1470px;
