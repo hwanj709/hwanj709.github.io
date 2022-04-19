@@ -15,27 +15,13 @@ const regionElement = document.querySelector('#region')
 const verbElement = document.querySelector('#verb')
 const adverbElement = document.querySelector('#adverb')
 
-fetch(authenticatedUrl)
-  .then((res) => res.json())
-  .then((data) => {
-    const words = data.records;
-    const adjectives = words.filter((word) => {
-        return word.fields.Type === 'adjective'
-    })
-    // Filter for Word Types 
-    const names = words.filter((word) => {
-        return word.fields.Type === 'name'
-    })
-    const types = words.filter((word) => {
-        return word.fields.Type === 'type'
-    })    
-    const regions = words.filter((word) => {
-        return word.fields.Type === 'region'
-    })
-    const verbs = words.filter((word) => {
-        return word.fields.Type === 'verb'
-    })
-    const adverbs = words.filter((word) => {
-        return word.fields.Type === 'adverb'
-    })
-});
+const fetchPromise = fetch(authenticatedUrl)
+const jsonPromise = fetchPromise.then((response) => {
+    return response.json()
+})
+jsonPromise.then((data) => {
+    const records =data.records
+    for (let index = 0; index < records.length; index++) {
+      
+     }
+})
