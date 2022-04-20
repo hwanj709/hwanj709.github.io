@@ -16,6 +16,7 @@ jsonPromise.then((data) => {
     for (let index = 0; index < records.length; index++) {
       
         const imageUrl = records[index].fields.Attachments[0].url
+        const Background = records[index].fields.Background[0]
         console.log(records[index].fields.Background);
         const containerElement = document.createElement('div')
         containerElement.classList.add('container')
@@ -24,12 +25,14 @@ jsonPromise.then((data) => {
         imageElement.classList.add('image')
         imageElement.setAttribute('src', imageUrl)
         
-        const backgroundElement = records[index].fields.Background[0]
-
         illustrationContainerElement.appendChild(containerElement)
 
         containerElement.appendChild(imageElement)
 
+        const streetBackgrounds = records.filter((record) => {
+          return record.fields.Background === "street" 
+        })
+        
         
     }
 })
@@ -39,9 +42,6 @@ const sub2 = document.querySelector('#sub2')
 const sub3 = document.querySelector('#sub3')
 
 
-const streetBackground = Background.filter((street) => {
-  return image.fields.Background === "street" 
-})
 
 
 
