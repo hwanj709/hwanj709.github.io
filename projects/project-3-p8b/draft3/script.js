@@ -17,7 +17,7 @@ jsonPromise.then((data) => {
       
         const imageUrl = records[index].fields.Attachments[0].url
         const Background = records[index].fields.Background[0]
-        console.log(records[index].fields.Background);
+        
         const containerElement = document.createElement('div')
         containerElement.classList.add('container')
 
@@ -41,8 +41,9 @@ const sub1 = document.querySelector('#sub1')
 const sub2 = document.querySelector('#sub2')
 const sub3 = document.querySelector('#sub3')
 
+sub1.innerHTML = streetBackgrounds
 
-
+console.log(streetBackgrounds);
 
 
 // function hideBook(book, div) {
