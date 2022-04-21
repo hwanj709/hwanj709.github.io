@@ -33,17 +33,20 @@ jsonPromise.then((data) => {
           return record.fields.Background === "street" 
         })
         
-        
-    }
-})
-
-const sub1 = document.querySelector('#sub1')
+        const sub1 = document.querySelector('#sub1')
 const sub2 = document.querySelector('#sub2')
 const sub3 = document.querySelector('#sub3')
 
 sub1.innerHTML = streetBackgrounds
 
-console.log(streetBackgrounds);
+        
+    }
+})
+
+#sub1.addEventListener(“click”, showStreetBgOnly);
+function showStreetBgOnly() {
+  
+}
 
 
 // function hideBook(book, div) {
