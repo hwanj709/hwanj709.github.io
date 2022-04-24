@@ -22,6 +22,15 @@ main{
     width: 100%;
 }
 
+.allphotos{
+    background-color: #2F3130;
+    color: #EAEBEB;
+    border: none;
+    position: absolute;
+    right: 559px;
+    top: 9px;
+}
+
 div#categories{
     margin: 10px;
     height: 200px;
@@ -32,7 +41,7 @@ div#categories{
     left: 9px;
 
 }
-#sub1{
+#street-button{
     height: 28px;
     width: 50px;
     background-color: #28353A;
@@ -42,7 +51,7 @@ div#categories{
     font-size: 14px;
     
 }
-#sub2{
+#shop-button{
     height: 30px;
     width: 50px;
     background-color: #28353A;
@@ -53,7 +62,7 @@ div#categories{
     font-size: 14px;
 }
 
-#sub3{
+#solid-button{
     height: 30px;
     width: 50px;
     background-color: #28353A;
@@ -109,19 +118,22 @@ div.container {
 img.image {
     max-width: 100%;
 }
-#sub1:hover{
+#street-button:hover{
     color:rgb(150, 37, 165);
 }
-#sub2:hover{
+#shop-button:hover{
     color:rgb(150, 37, 165);
 }
-#sub3:hover{
+#solid-button:hover{
     color:rgb(150, 37, 165);
 }
 img.image:hover{
     -webkit-transform: scale(1.3);
 	transform: scale(2);
     z-index: 2;
+}
+.allphotos:hover{
+    color:rgb(150, 37, 165);
 }
 .active{
     display:block;
@@ -130,3 +142,15 @@ img.image:hover{
 .hidden{
     display: none;
 }
+#streetImage {
+    display: block;
+}
+    
+#shopImage {
+      display: block;
+}
+    
+#solidImage {
+      display: block;
+}
+    

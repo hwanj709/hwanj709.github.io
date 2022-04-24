@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    text-align: center;
+    justify-content: center;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+#application {
+    width: 100%;
+    height: 100%; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

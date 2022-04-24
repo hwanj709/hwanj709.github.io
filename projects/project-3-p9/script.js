@@ -33,20 +33,79 @@ jsonPromise.then((data) => {
         
         // illustrationContainerElement.appendChild(containerElement)
 
-        photoContainer.appendChild(imageElement)
+        photoContainer.appendChild(containerElement)
 
-        const streetBackgrounds = records.filter((record) => {
-          return record.fields.Background === "street" 
-        })
-        
-//         const sub1 = document.querySelector('#sub1')
-// const sub2 = document.querySelector('#sub2')
-// const sub3 = document.querySelector('#sub3')
-
-// sub1.innerHTML = streetBackgrounds
-
-        
+        // const streetBackgrounds = records.filter((record) => {
+        //   return record.fields.Background === "street" 
+        // })
+        containerElement.appendChild(imageElement)
+            const streetBackgrounds = records[index].fields.Street
     }
+document.getElementById("street-button").addEventListener("click", showStreetImages)
+document.getElementById("shop-button").addEventListener("click", showShopImages)
+document.getElementById("solid-button").addEventListener("click", showSolidImages)
+document.getElementById("allphotos-button").addEventListener("click", showAllImages)
+      function showStreetImages() {
+        for (let index = 0; index < records.length; index++) {
+          const imageID = document.getElementById(records[index].id);
+          imageID.style.display = "block";
+        }
+        for (let index = 0; index < records.length; index++) {
+          const streetField = records[index].fields.Street
+          if (streetField!=true){
+            const imageID = document.getElementById(records[index].id)
+                    console.log(imageID)
+                    imageID.style.display = "none";
+          }
+        }
+      }
+      function showShopImages() {
+        for (let index = 0; index < records.length; index++) {
+        const imageID = document.getElementById(records[index].id);
+        imageID.style.display = "block";
+      }
+        for (let index = 0; index < records.length; index++) {
+        const shopField = records[index].fields.Shop
+        if (shopField!=true){
+          const imageID = document.getElementById(records[index].id)
+                  console.log(imageID)
+                  imageID.style.display = "none";
+        }
+      }
+    }
+    function showSolidImages() {
+      for (let index = 0; index < records.length; index++) {
+      const imageID = document.getElementById(records[index].id);
+      imageID.style.display = "block";
+    }
+      for (let index = 0; index < records.length; index++) {
+      const solidField = records[index].fields.Solid
+      if (solidField!=true){
+        const imageID = document.getElementById(records[index].id)
+        // const containerElement = document.querySelector('.container')
+                console.log(imageID)
+                imageID.style.display = "none";
+                // containerElement.style.display = "none";
+
+      }
+    }
+  }
+  function showAllImages() {
+    for (let index = 0; index < records.length; index++) {
+    const imageID = document.getElementById(records[index].id);
+    imageID.style.display = "block";
+  }
+    for (let index = 0; index < records.length; index++) {
+    const allImagesField = records[index].fields.Allphotos
+    if (allImagesField!=true){
+      const imageID = document.getElementById(records[index].id)
+              console.log(imageID)
+              imageID.style.display = "none";
+    }
+  }
+}
+        
+    
 })
 
 // #sub1.addEventListener(“click”, showStreetBgOnly);
