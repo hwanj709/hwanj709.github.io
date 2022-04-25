@@ -15,141 +15,59 @@
 <body>
     <div class="container">
         <img src = "assets/image01.jpeg" id=mainImage alt="firstImage" style="width:520px;height:520px;">
-        <div class="calendar">
-            <div class="month">
-                <i class="fas fa-angle-left prev"></i>
-                <div class="date">
-                    <h1>April</h1>
-                    <p>Fri April 21, 2022</p>
-                </div>
-                <i class="fas fa-angle-right next"></i>
-            </div>
-            <div class="weekdays">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thurs</div>
-                <div>Fri</div>
-                <div>Sat</div>
-            </div>
-            <div class="days">
-                <div class="prev-date">27</div>
-                <div class="prev-date">28</div>
-                <div class="prev-date">29</div>
-                <div class="prev-date">30</div>
-                <div class="prev-date">31</div>
-                <div class="today">1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>10</div>
-                <div>11</div>
-                <div>12</div>
-                <div>13</div>
-                <div>14</div>
-                <div>15</div>
-                <div>16</div>
-                <div>17</div>
-                <div>18</div>
-                <div>19</div>
-                <div>20</div>
-                <div>21</div>
-                <div>22</div>
-                <div>23</div>
-                <div>24</div>
-                <div>25</div>
-                <div>26</div>
-                <div>27</div>
-                <div>28</div>
-                <div>29</div>
-                <div>30</div>
-                <div class="next-date">1</div>
-                <div class="next-date">2</div>
-                <div class="next-date">3</div>
-                <div class="next-date">4</div>
-                <div class="next-date">5</div>
-                <div class="next-date">6</div>
-                <div class="next-date">7</div>
-            </div>
-        </div>
-    </div>
-    
-<script>
-    const date = new Date();
+        <div id="calendar">
+     </div>      
+     <script>
+         const colorsArray = ["#414141", "#484848", "#858585", "#B6B6B6", "#7B7B7B"];
+//색상 총 5개
 
-    date.setDate(1);
+const newDate = new Date();
+const currentDate = {
+    year: newDate.getFullYear(),
+    month: newDate.getMonth(),
+    day: newDate.getDay(),
+    hour: newDate.getHours(),
+    minute: newDate.getMinutes(),
+    second: newDate.getSeconds(),
+};
+const steps = [
+    currentDate.year, 
+    currentDate.month,
+    currentDate.day, 
+    currentDate.hour,
+    currentDate.minute,
+    currentDate.second,
+];
 
-    const monthDays = document.querySelector(".days");
+const applicationElement = document.querySelector('div#calendar');
+console.log('applicationElement', applicationElement)
+const createDivElement = () =>{
+    return document.createElement('div');
+};
 
-    const lastDay = new Date(date.getFullYear(), date.getMonth()+1, 0).getDate();
+const createParagraphElement = () => {
+    return document.createElement('p');
+};
 
-    const prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
+for (let index = 0; index < steps.length; index++) {
+   //do smth to each step
+    const divElement = createDivElement();
+    const paragraphElement = createParagraphElement();
+    paragraphElement.innerHTML = steps[index];
+    const colorIndex = steps[index] % 4;
+    const divElementColor = colorsArray[colorIndex];
+    divElement.style.backgroundColor = divElementColor;
+    divElement.classList.add("step");
+    if(steps[index] % 2 === 0){
+        console.log("linear-gradiant("+ divElementColor + ", " + colorsArray[0] + ")")
+        console.log(divElement)
+        divElement.style.background = "linear-gradient("+ divElementColor + "," + colorsArray[0] + ")"
+    };
 
-    const firstDayIndex = date.getDay();
+    applicationElement.appendChild(divElement);
+    divElement.appendChild(paragraphElement);
+}
 
-    const lastDayIndex = new Date(date.getFullYear(), date.getMonth()+1, 0).getDay();
-
-    const nextDays = 7 - lastDayIndex - 1;
-
-    const months = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "Novemeber",
-        "December",
-    ];
-
-    document.querySelector(".date h1").innerHTML
-    = months[date.getMonth()];
-
-    document.querySelector(".date p").innerHTML
-    = date.toDateString();
-
-    let days = "";
-
-    for(let x = firstDayIndex; x > 0; x--){
-        days += '<div class="prev-date">${prevLastDay - x + 1}</div>'
-    }
-
-    for(let i = 1;i <= lastDay; i++){
-        if(i === new Date().getDate()&&date.getMonth()===new Date().getMonth()){
-            days += '<div class="today"${i}</div>';
-        }else{
-            days += '<div>${i}</div>';
-        }
-    }
-
-    for(let j = 1; j <= nextDays; j++){
-        days += '<div class="next-date">${j}</div>';
-        monthDays.innerHTML = days;
-    }
-
-
-    let myImage=document.getElementById("mainImage");
-    let imageArray=["assets/image02.jpeg","assets/image03.jpeg","assets/image04.jpeg","assets/image05.jpeg","assets/image06.jpeg"];
-    let imageIndex=0;
-
-    function changeImage(){
-        myImage.setAttribute("src",imageArray[imageIndex]);
-        imageIndex++;
-        if(imageIndex>=imageArray.length){
-            imageIndex=0;
-        }
-    }
-    setInterval(changeImage,60000);
-</script>
+     </script> 
 </body>
 </html>
