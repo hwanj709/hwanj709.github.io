@@ -61,3 +61,8 @@ form button:hover{
     background-color: white;
     color: #333333;
 }
+
+.to-do-item {
+    display: flex;
+    flex-direction: row;
+}

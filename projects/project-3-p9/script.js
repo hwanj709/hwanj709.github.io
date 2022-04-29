@@ -48,6 +48,7 @@ document.getElementById("allphotos-button").addEventListener("click", showAllIma
       function showStreetImages() {
         for (let index = 0; index < records.length; index++) {
           const imageID = document.getElementById(records[index].id);
+          imageID.parentElement.style.display = "block" // ian
           imageID.style.display = "block";
         }
         for (let index = 0; index < records.length; index++) {
@@ -55,6 +56,7 @@ document.getElementById("allphotos-button").addEventListener("click", showAllIma
           if (streetField!=true){
             const imageID = document.getElementById(records[index].id)
                     console.log(imageID)
+                    imageID.parentElement.style.display = "none" // ian
                     imageID.style.display = "none";
           }
         }
@@ -62,6 +64,7 @@ document.getElementById("allphotos-button").addEventListener("click", showAllIma
       function showShopImages() {
         for (let index = 0; index < records.length; index++) {
         const imageID = document.getElementById(records[index].id);
+        imageID.parentElement.style.display = "block"
         imageID.style.display = "block";
       }
         for (let index = 0; index < records.length; index++) {
@@ -69,6 +72,7 @@ document.getElementById("allphotos-button").addEventListener("click", showAllIma
         if (shopField!=true){
           const imageID = document.getElementById(records[index].id)
                   console.log(imageID)
+                  imageID.parentElement.style.display = "none"
                   imageID.style.display = "none";
         }
       }
@@ -76,6 +80,7 @@ document.getElementById("allphotos-button").addEventListener("click", showAllIma
     function showSolidImages() {
       for (let index = 0; index < records.length; index++) {
       const imageID = document.getElementById(records[index].id);
+      imageID.parentElement.style.display = "block"
       imageID.style.display = "block";
     }
       for (let index = 0; index < records.length; index++) {
@@ -84,6 +89,7 @@ document.getElementById("allphotos-button").addEventListener("click", showAllIma
         const imageID = document.getElementById(records[index].id)
         // const containerElement = document.querySelector('.container')
                 console.log(imageID)
+                imageID.parentElement.style.display = "none"
                 imageID.style.display = "none";
                 // containerElement.style.display = "none";
 
@@ -93,6 +99,7 @@ document.getElementById("allphotos-button").addEventListener("click", showAllIma
   function showAllImages() {
     for (let index = 0; index < records.length; index++) {
     const imageID = document.getElementById(records[index].id);
+    imageID.parentElement.style.display = "block"
     imageID.style.display = "block";
   }
     for (let index = 0; index < records.length; index++) {
