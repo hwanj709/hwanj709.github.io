@@ -21,17 +21,18 @@ main{
     
     
 }
-.feedback{
+div#input-feedback.feedback{
     min-height: 1rem;
-    /* display: flex;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center; */
-    
+    justify-content: center;
 }
-.feedback p{
+div#input-feedback.feedback p{
     display: flex;
     align-items: center;
     justify-content: center;
+    
     margin: 0.5rem;
 }
 
@@ -53,9 +54,13 @@ form button{
     color: white;
     cursor: pointer;
 }
-.completed-btn{
+button.completed-btn{
     border: none;
-    display: inline;
+    background-color: transparent;
+    /* display: inline; */
+}
+input#myCheck{
+    size-adjust: 13px;
 }
 form button:hover{
     background-color: white;
