@@ -45,6 +45,7 @@ header{
     background-color: rgb(226, 200, 48);
     color: white;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
 .controls div {
@@ -70,7 +71,7 @@ header{
 }
 
 .btn:hover{
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(247, 172, 86);
 }
 
 .project{
@@ -87,6 +88,7 @@ canvas{
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 20%;
+    border-radius: 10px;
 }
 
 input{
@@ -96,4 +98,27 @@ input{
     border: 0;
     text-align: center;
     color: rgb(161, 161, 161)
+}
+
+#screenshot-btn{
+    height: 40px;
+    width: 160px;
+    font-size: 1rem;
+    background-color:rgb(226, 200, 48) ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+#screenshot-btn:hover{
+    background-color: rgb(247, 172, 86);
+    height: 55px;
+    width: 175px;
+    font-size: 1.3rem;
 }
