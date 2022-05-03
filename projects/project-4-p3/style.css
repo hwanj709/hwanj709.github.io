@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+
+
+
+/* html{
+    background-image: url("assets/background") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+} */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url("assets/background");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.app{
+    width: 100vw;
+    height: 100vh;
+    /* display:flex;
+    flex-direction: column;
+    align-items: center; */
+}
+header{
+    position: absolute;
+    left: 25%;
+    font-size: 2rem;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #5A942C;
+}
+.controls{
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    width: 7vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(226, 200, 48);
+    color: white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.controls div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.btn{
+    padding: 3px;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    background-color: rgb(22, 22, 22);
+}
+
+.project{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(173, 173, 173); */
+}
+
+canvas{
+    background-color: white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20%;
+}
+
+input{
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: 0;
+    text-align: center;
+    color: rgb(161, 161, 161)
+}
