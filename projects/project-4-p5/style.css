@@ -10,7 +10,7 @@
     background-size:cover;
 } */
 body{ 
-    animation: changeBg 40s infinite; 
+    animation: changeBg 50s infinite; 
     font-family: 'Shadows Into Light', cursive;
     margin: 0;
     background-position: center center;
@@ -19,10 +19,10 @@ body{
     cursor: crosshair;
  }
 @keyframes changeBg{
-   0%,100%  {background-image: url("assets/background1.webp");}
-   25% {background-image: url("assets/background2.jpeg");}
-   50% {background-image: url("assets/background3.png");}
-   75% {background-image: url("assets/background4.webp");}
+   0%,100%  {background-image: url("assets/background5.jpeg");}
+   25% {background-image: url("assets/background6.jpeg");}
+   50% {background-image: url("assets/background7.jpeg");}
+   75% {background-image: url("assets/background8.jpeg");}
 }
 
 
@@ -42,8 +42,9 @@ header{
     top: 5%;
     font-size: 2rem;
     font-family: 'Gloria Hallelujah', cursive;
-    color: #5A942C;
-    background-color:rgb(226, 200, 48);
+    color: #106085;
+    background-color:rgb(206, 203, 187);
+    opacity: 60%;
     border-radius: 10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -62,8 +63,9 @@ header h1{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(226, 200, 48);
-    color: white;
+    background-color:rgb(206, 203, 187);
+    opacity: 70%;
+    color: #106085;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
@@ -75,7 +77,9 @@ header h1{
     justify-content: center;
     
 }
-
+/* input#radius{
+    opacity: 100%;
+} */
 .title{
     font-size: 2rem;
 }
@@ -91,7 +95,7 @@ header h1{
 }
 
 .btn:hover{
-    background-color: rgb(247, 172, 86);
+    background-color: white;
 }
 
 .project{
@@ -131,9 +135,10 @@ input{
     height: 40px;
     width: 160px;
     font-size: 1.3rem;
-    background-color:rgb(226, 200, 48) ;
+    background-color:rgb(206, 203, 187);
+    opacity: 60%;
     font-family: 'Shadows Into Light', cursive;
-    color: white;
+    color: #106085;
     border: none;
     border-radius: 10px;
     outline: none;
@@ -144,10 +149,11 @@ input{
     z-index: 9999;
 }
 #screenshot-btn:hover{
-    background-color: rgb(247, 172, 86);
+    background-color:white;
     height: 55px;
     width: 175px;
     font-size: 1.5rem;
+    opacity: 80%;
 }
 /* @media screen and (max-width: 1200px) {
 
