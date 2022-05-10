@@ -4,8 +4,9 @@ body{
 }
 
 
-
-
+/* 
+MOBILE FIRST MQ
+when the screen is bigger than 768 apply these style */
 @media screen and (min-width: 768px){
     .example {
         font-size: 50px;
@@ -17,7 +18,9 @@ body{
     .logo .word .remaining-word{
         display:none;
     }
-    }
+}
+
+/* this applies to the smallest screen size, the mobile version */
 .example {
     font-size: 40px;
 }
@@ -37,6 +40,7 @@ body{
     display:none;
 }
 
+/* this applies to the biggest screen size, when the screen is bigger than 1200 than this style applies */
 @media screen and (min-width: 1200px){
     .example {
         font-size: 60px;
@@ -52,3 +56,16 @@ body{
         display: inline-block;
     }
 }
+
+/* LABTOP FIRST MQ
+write the normal screen size stylesheet first */
+
+/* this one applies when the screen size gets smaller than 1200 */
+/* @media screen and (max-width: 1200px) {
+
+}
+
+this one applies when the screen size gets smaller than 768, the mobile version
+@media screen and (max-width: 768px) {
+    
+} */
