@@ -1,12 +1,12 @@
-var canvas = document.getElementById("canvas");
-canvas.width = window.innerWidth / 2; 
-canvas.height = window.innerHeight / 2;
+var pcanvas = document.getElementById("paint-canvas");
+pcanvas.width = window.innerWidth / 2; 
+pcanvas.height = window.innerHeight / 2;
 //  나누기 1.4로 바꾸기
-var bound = canvas.getBoundingClientRect();
-var c = canvas.getContext('2d');
+var bound = pcanvas.getBoundingClientRect();
+var c = pcanvas.getContext('2d');
 
-var xlim = canvas.width;
-var ylim = canvas.height;
+var xlim = pcanvas.width;
+var ylim = pcanvas.height;
 
 var color = document.getElementById("color");
 var radius = document.getElementById("radius");
@@ -74,11 +74,12 @@ addEventListener("mouseup",(e) => {
     stroke = [];
 })
 function screenshot(){
-    html2canvas(document.querySelector("div.project")).then(canvas => {
+    html2canvas(document.querySelector("#paint-canvas")).then(canvas => {
         document.body.appendChild(canvas)
-        // canvas.style = "position: absolute; top:15%; left:11%;";
+        
     });
-    alert("Right click on the image to save the screenshot!");
+    alert("Right click on the canvas to save the screenshot!");
+    canvas.style = "position: absolute; top:15%; left:11%;";
 }
 // const screenshot = document.querySelector(".screenshot")
 // screenshot.addEventListener('click', e => {
@@ -99,3 +100,4 @@ function screenshot(){
 //         // console.log("is this workiong?");
 //     }
 //     setInterval(randombg,2000);
+    

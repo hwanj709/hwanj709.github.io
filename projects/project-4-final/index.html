@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4: part 3</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- <script src="./script.js" type="text/javascript" defer></script> -->
+    <script src="https://kit.fontawesome.com/4f49c13107.js" crossorigin="anonymous"></script>
+    
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<body>
+    <!-- <img src = "assets/background1.webp" id=mainImage alt="firstImage" style="max-width: 100vw; max-height: 100vh;"> -->
+   <div class="app">
+       <header>
+           <h1>Let's paint flowers</h1>
+       </header>
+       <div class="controls">
+           <div>
+               <div class="title">Color</div>
+               <input type="color" id="color">
+           </div>
+           <div>
+               <div class="title">Size</div>
+               <input type="number" min="1" max="100" value="10" id="radius">
+           </div>
+           <div>
+               <div class="btn" onclick="erase()">Erase</div>
+               <div class="btn" onclick="eraseWhole()">Delete</div>
+           </div>
+       </div>
+       <div class="project">
+           <canvas id="paint-canvas"></canvas>
+       </div>
+       <div class="screenshot">
+           <button id="screenshot-btn" onclick="screenshot()"> Take Screenshot</button>
+       </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+
+</html>

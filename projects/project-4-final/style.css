@@ -37,11 +37,11 @@ body{
     align-items: center; */
 }
 header{
-    position: absolute;
+    position: fixed;
     left: 25%;
     top: 5%;
-    font-size: 2rem;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2.5rem;
+    font-family: 'Shadows Into Light', cursive;
     color: #106085;
     background-color:rgb(206, 203, 187);
     opacity: 60%;
@@ -54,7 +54,7 @@ header h1{
     margin: 0;
 }
 .controls{
-    position: absolute;
+    position: fixed;
     left: 2%;
     top: 2%;
     width: 7vw;
@@ -96,6 +96,7 @@ header h1{
 
 .btn:hover{
     background-color: white;
+    border-radius: 10px;
 }
 
 .project{
@@ -107,7 +108,7 @@ header h1{
     /* background-color: rgb(173, 173, 173); */
 }
 
-canvas{
+#paint-canvas{
     background-color: white;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
     position: absolute;
@@ -156,7 +157,51 @@ input{
     opacity: 80%;
 }
 /* @media screen and (max-width: 1200px) {
+    header{
+        position: fixed;
+        left: 20%;
+        top: 12%;
+        font-size: 1rem;
+        font-family: 'Gloria Hallelujah', cursive;
+        color: #106085;
+        background-color:rgb(206, 203, 187);
+        opacity: 60%;
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+    }
+    header h1{
+        margin: 0;
+    }
+    .controls{
+        padding:5px;
+    }
+    .btn{
+        padding: 3px;
+        font-size: 1.2rem;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0);
+        outline: none;
+        border: 0;
+        text-align: center;
+        color: rgb(161, 161, 161)
+    }
+    .title{
+        font-size: 1.5rem;
+    }
 }
+
 @media screen and (max-width: 768px) {
-    
+    canvas{
+        max-width: 60%;
+        max-height: 90%;
+    }
 } */
