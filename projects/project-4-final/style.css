@@ -25,7 +25,11 @@ body{
    75% {background-image: url("assets/background8.jpeg");}
 }
 
-
+.about{
+    color: white;
+    position: absolute;
+    right: 3%;
+}
 #mainImage{
     height: 100
 }
