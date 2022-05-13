@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+html{
+    width: 80vw;
+    background-color: rgb(139, 151, 184);
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+.question{
+    font-weight:700 ;
+    margin: 10px;
+    font-size: 1.3rem;
+    color:rgb(101, 58, 139)
+}
+.answer{
+    border-style: dashed;
+    padding: 10px;
+    margin: 15px;
+    width:fit-content;
+}
+.xb-answer #position{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    border: none;
+}
+/* .flex-answer{
+    display: flex;
+    flex-direction: row;
+} */
+#columns{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+@media screen and (max-width: 768px){
+    html{
+        background-color: rgb(231, 159, 213);
+        color: rgb(248, 252, 204);
+    }
+    .question{
+        color:rgb(95, 105, 39)
+    }
+    }
