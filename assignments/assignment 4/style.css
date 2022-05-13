@@ -110,13 +110,40 @@ ul{
 footer{
     color: white;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px){
+@media screen and (max-width: 768px){
+    
+    .title{
+        text-align: center;
+        max-width: 80%;
+    }
+    .album_cover{
+        max-width: 70%;
+    }
     .main_container{
         display:flex;
         flex-direction: column;
     }
+    .flex_container_1{
+        padding-bottom: 50px;
+    }
     .flex_container_2{
         flex-direction: column;
         height:auto;
+    }
+    .flex_container_3{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .arrow-left{
+        /* position: absolute;
+        left:60%; */
+        border-top: 15px solid transparent;
+	border-right: 40px solid white;
+	border-bottom: 15px solid transparent;
+    padding-left: 10px;
+    }
+    .click_here{
+        font-size: 25px;
+        margin-right: 50px;
     }
 }
