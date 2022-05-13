@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-/* 스크린 크기 중간일떄 */
-@media screen and (min-width: 768px){
-    .flex-container{
-        display: flex;
-        flex-direction: column;
-    }
-    .about{
-        text-align: center;
-        width: 500px;
-    }
-    }
 
-/* 스크린 크기 제일 작을떄 */
-
-
-
-/* 스크린 크기 제일 클떄 */
-@media screen and (min-width: 1200px){
     body  {
         font-family: 'Roboto', sans-serif;
     }
@@ -68,4 +51,64 @@
         font-weight: 400;
         font-size: 30px;
     }
-}
+
+
+    @media screen and (max-width: 1200px){
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .about{
+            text-align: right;
+            width: 600px;
+            position: absolute;
+            right: 6%;
+            top: 60%;
+        }
+        .about p br{
+            display: none;
+        }
+        .example:nth-child(4){
+            margin-top: 15%;
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .about{
+            text-align: right;
+            width: 500px;
+            position: absolute;
+            top: 70%;
+        }
+        .about p br{
+            display: none;
+        }
+        .example:nth-child(4){
+            margin-top: 50%;
+        }
+        .glyphs p br{
+            display: none;
+        }
+        }
+        @media screen and (max-width: 768px){
+            .flex-container{
+                display: flex;
+                flex-direction: column;
+            }
+            .about{
+                text-align: center;
+                width: 500px;
+                position: absolute;
+                top: 75%;
+            }
+            .about p br{
+                display: none;
+            }
+            .example:nth-child(4){
+                margin-top: 100%;
+            }
+            }
